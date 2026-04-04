@@ -1,0 +1,32 @@
+.app {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  display: block;
+  padding: 100px 5%;
+  min-height: 80vh;
+  border-bottom: 1px solid #eee;
+  scroll-margin-top: 80px;
+}
+
+main {
+  flex: 1;
+
+  padding: 20px;
+  padding-top: 90px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
