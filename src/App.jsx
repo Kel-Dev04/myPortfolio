@@ -28,7 +28,7 @@ function App() {
             {" "}
             <Projects />
           </section>
-          <section id="Slills">
+          <section id="Skills" className="skills-section">
             {" "}
             <Skills />
           </section>
@@ -39,7 +39,7 @@ function App() {
           <section id="Experience">
             <Experience />
           </section>
-          <section id="Contact">
+          <section className="contact-section" id="Contact">
             {" "}
             <Contact />
           </section>

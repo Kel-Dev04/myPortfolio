@@ -28,7 +28,7 @@
   margin-bottom: 15px;
 }
 
-.Project-title {
+.project-title {
   font-size: 1.2em;
   margin: 0 0 10px;
 }
@@ -51,4 +51,14 @@
 
 .view-button:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    padding: 15px;
+  }
+  .projects-container {
+    gap: 15px;
+  }
 }

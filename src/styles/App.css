@@ -30,3 +30,17 @@ section {
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  .app {
+    width: 95%;
+    padding: 0 10px;
+  }
+  section {
+    padding: 80px 2%;
+  }
+  main {
+    padding: 10px;
+    padding-top: 80px;
+  }
+}
