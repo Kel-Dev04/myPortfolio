@@ -5,15 +5,17 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 0 20px;
+  background: #0f1419;
 }
 
 main {
   flex: 1;
   padding: 20px;
-  padding-top: 90px;
+  padding-top: clamp(65px, 12vw, 80px);
   display: flex;
   flex-direction: column;
   gap: 40px;
+  background: #0f1419;
 }
 
 section {
@@ -24,9 +26,10 @@ section {
   text-align: center;
   padding: clamp(60px, 10vw, 120px) 5%;
   min-height: 80vh;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #1f2937;
   scroll-margin-top: 100px;
   margin-bottom: 40px;
+  background: linear-gradient(135deg, #16191e 0%, #1a1f2e 100%);
 }
 
 section > * {
@@ -34,8 +37,43 @@ section > * {
   max-width: 920px;
 }
 
+#Experience {
+  background: #0f1419;
+  border-bottom: none;
+}
+
 html {
   scroll-behavior: smooth;
+  background: #0f1419;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: #f9fafb;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 6vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -44,10 +82,27 @@ html {
     padding: 0 10px;
   }
   section {
-    padding: 80px 2%;
+    padding: clamp(40px, 8vw, 80px) 2%;
+    min-height: auto;
+    gap: 20px;
   }
   main {
     padding: 10px;
-    padding-top: 80px;
+    padding-top: 70px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    width: 100%;
+    padding: 0 8px;
+  }
+  section {
+    padding: clamp(30px, 6vw, 50px) 3%;
+  }
+  main {
+    padding: 8px;
+    padding-top: 65px;
   }
 }

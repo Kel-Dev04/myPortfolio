@@ -10,46 +10,43 @@ const Services = () => {
         "Node.js",
         "JavaScript",
         "TypeScript",
-        "FrameWork",
-        "vite",
+        "Framework",
+        "Vite",
         "PERN Stack",
         "Web App",
       ],
       description:
-        "Building fast, SEO-friendly web applications With Modern Architecture.",
+        "Building fast, SEO-friendly web applications with modern architecture and best practices.",
     },
 
     {
       title: "Multilingual Tech Support",
       icon: "🧑🏽‍💻",
-      tags: ["Customer Success", "Call center", "Technical Help", "Bilingual"],
+      tags: ["Customer Success", "Support", "Technical Help", "Bilingual"],
       description:
-        "Expert support and communication in English, Spanish, Portuguese, and Haitien Creole. ",
+        "Expert technical support in English, Spanish, Portuguese, and Haitian Creole.",
     },
     {
       title: "Cloud & DevOps",
       icon: "☁️",
       tags: ["AWS", "Infrastructure", "Deployment", "Automation"],
       description:
-        "Secure and scalable cloud soluctions using amazon web services or others clouds soluctions. ",
+        "Secure and scalable cloud solutions using AWS and other cloud platforms.",
     },
     {
       title: "Software Localization",
       icon: "🌎",
-      tags: ["Translation", "Global Markets", "UI/UX Adaption"],
+      tags: ["Translation", "Global Markets", "UI/UX Adaptation"],
       description:
-        "Adaptioning your software for international users and multiple languages.",
+        "Adapting software for international users and multiple languages.",
     },
   ];
 
   return (
     <section id="Services" className="services-section">
-      <div className="services-blur-effect"></div>
-
       <header className="services-header">
-        <span className="subtitle"> Expertise</span>
         <h2>
-          What I Can Do <span className="highlight"> For You</span>
+          What I Can Do <span className="highlight">For You</span>
         </h2>
       </header>
 
@@ -62,7 +59,9 @@ const Services = () => {
 
             <div className="service-tags">
               {s.tags.map((tag) => (
-                <span key={tag} className="tag">#{tag}</span>
+                <span key={tag} className="tag">
+                  #{tag}
+                </span>
               ))}
             </div>
           </div>

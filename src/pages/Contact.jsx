@@ -1,6 +1,12 @@
 import "../styles/Contact.css";
 
 const Contact = () => {
+  const handleTextareaChange = (e) => {
+    const textarea = e.target;
+    textarea.style.height = "auto";
+    textarea.style.height = `${textarea.scrollHeight}px`;
+  };
+
   return (
     <section id="Contact" className="contact-section">
       <div className="contact-header">
@@ -36,9 +42,9 @@ const Contact = () => {
           <textarea
             name="message"
             id="message"
-            rows="5"
-            placeholder=" How Can I help you? "
+            placeholder="How can I help you?"
             required
+            onInput={handleTextareaChange}
           ></textarea>
         </div>
 

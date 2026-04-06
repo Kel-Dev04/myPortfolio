@@ -3,7 +3,7 @@ import "../styles/Skills.css";
 const Skills = () => {
   const skillsCategories = [
     {
-      category: "Fronted",
+      category: "Frontend",
       items: ["React", "JavaScript", "TypeScript", "CSS3"],
     },
     {
@@ -17,7 +17,7 @@ const Skills = () => {
     },
     {
       category: "Workflow",
-      items: ["termux", "Linux", "Mobile-First Dev"],
+      items: ["Termux", "Linux", "Mobile-First"],
     },
   ];
 

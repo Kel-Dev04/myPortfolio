@@ -1,0 +1,23 @@
+.footer {
+  background: linear-gradient(90deg, #16191e 0%, #1a1f2e 100%);
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.footer-content p:first-child {
+  color: #60a5fa;
+  font-weight: 500;
+}
