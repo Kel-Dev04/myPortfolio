@@ -2,7 +2,7 @@ import "../styles/Contact.css";
 
 const Contact = () => {
   return (
-    <>
+    <section id="Contact" className="contact-section">
       <div className="contact-header">
         <h2>Contact Me</h2>
         <p>Get in touch.</p>
@@ -43,11 +43,10 @@ const Contact = () => {
         </div>
 
         <button type="submit" className="btn-submit">
-          {" "}
           Send message
         </button>
       </form>
-    </>
+    </section>
   );
 };
 

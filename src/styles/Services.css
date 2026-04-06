@@ -1,0 +1,82 @@
+.services-section {
+  padding: clamp(80px, 10vw, 140px) 5%;
+  background: #0b0d17;
+  position: relative;
+  overflow: hidden;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.services-blur-effect {
+  position: absolute;
+  top: 20%;
+  right: -10px;
+  width: 420px;
+  height: 420px;
+  background: rgba(0, 123, 255, 0.2);
+  filter: blur(120px);
+  border-radius: 50%;
+  z-index: 0;
+}
+.services-header {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+.highlight {
+  color: #007bff;
+  text-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+}
+.services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  place-items: center;
+}
+.services-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  width: 100%;
+  max-width: 540px;
+}
+.services-glass-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-10px) rotateX(5deg);
+}
+.card-icon{
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+
+.service-tags{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+}
+.tag{
+    font-size: 0.75;
+    background: rgba(0, 123, 255, 0.15);
+    color: #8d9ef6;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-weight: 600;
+    border:1px solid rgba(0, 123, 255, 0.3)
+
+}
+@media (max-width:768px) {
+    .services-header h2 {
+        font-size: 2rem;
+    }
+    
+}

@@ -1,5 +1,4 @@
 import "../styles/Skills.css";
-import React from "react";
 
 const Skills = () => {
   const skillsCategories = [
@@ -23,7 +22,7 @@ const Skills = () => {
   ];
 
   return (
-    <>
+    <section id="Skills" className="skills-section">
       <h2>My Skills</h2>
       <p>Skills content here.</p>
       <div className="skills-container">
@@ -31,14 +30,16 @@ const Skills = () => {
           <div key={index} className="skill-group">
             <h3>{skill.category}</h3>
             <div className="skill-tags">
-              {skill.items.map(item => 
-                <span  key={item} className="skill-tag">{item}</span>
-              )}
+              {skill.items.map((item) => (
+                <span key={item} className="skill-tag">
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

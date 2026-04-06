@@ -2,7 +2,7 @@ import Card from "../components/Card";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="Projects" className="projects-section">
       <h2>My Projects</h2>
       <p>Here are my projects.</p>
       <div className="projects-container">

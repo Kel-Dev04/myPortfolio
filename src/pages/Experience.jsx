@@ -20,7 +20,7 @@ const Experience = () => {
         " Completed my final year and began deep-diving into Computer Science. ",
     },
   ];
-  const Certifications = [
+  const certifications = [
     {
       title: "CS50: Intro to Programing ",
       provider: "Harvard University / Online",
@@ -46,7 +46,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="journey-section">
+    <section id="Experience" className="journey-section">
       <div className="section-header">
         <h2>My Journey</h2>
         <p>A global path through education and technology.</p>
@@ -67,7 +67,7 @@ const Experience = () => {
       </div>
 
       <div className="certs-list">
-        {Certifications.map((cert, index) => (
+        {certifications.map((cert, index) => (
           <div key={index} className="cert-item">
             <div className="cert-accent">
               <h4>{cert.title}</h4>
