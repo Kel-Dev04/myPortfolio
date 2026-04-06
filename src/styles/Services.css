@@ -51,32 +51,28 @@
   border-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-10px) rotateX(5deg);
 }
-.card-icon{
-    font-size: 3rem;
-    margin-bottom: 20px;
-
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.service-tags{
-    margin-top: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-
+.service-tags {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-.tag{
-    font-size: 0.75;
-    background: rgba(0, 123, 255, 0.15);
-    color: #8d9ef6;
-    padding: 4px 12px;
-    border-radius: 50px;
-    font-weight: 600;
-    border:1px solid rgba(0, 123, 255, 0.3)
-
+.tag {
+  font-size: 0.75;
+  background: rgba(0, 123, 255, 0.15);
+  color: #8d9ef6;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 123, 255, 0.3);
 }
-@media (max-width:768px) {
-    .services-header h2 {
-        font-size: 2rem;
-    }
-    
+@media (max-width: 768px) {
+  .services-header h2 {
+    font-size: 2rem;
+  }
 }
