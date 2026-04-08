@@ -4,7 +4,7 @@
   align-items: center;
   padding: clamp(40px, 8vw, 80px) 5%;
   min-height: 60vh;
-  background: linear-gradient(135deg, #16191e 0%, #1a1f2e 100%);
+  background:  #0f1419;
   text-align: center;
 }
 

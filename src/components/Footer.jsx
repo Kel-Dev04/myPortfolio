@@ -4,8 +4,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>Built by KelDev — full-stack portfolio with React and Vite.</p>
-        <p>&copy; {new Date().getFullYear()} KelDev. All rights reserved.</p>
+        <p>Built by KelvRuntime — full-stack portfolio with React and Vite.</p>
+        <p>
+          &copy; {new Date().getFullYear()} KelvRuntime. All rights reserved.
+        </p>
       </div>
     </footer>
   );

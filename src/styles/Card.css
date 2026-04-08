@@ -1,6 +1,11 @@
+.projects-section{
+background:  #0f1419;
+
+}
 .project-card {
+
   width: 300px;
-  background: rgba(255, 255, 255, 0.08);
+  background:  #0f1419;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 24px;

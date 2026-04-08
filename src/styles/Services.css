@@ -1,6 +1,6 @@
 .services-section {
   padding: clamp(80px, 10vw, 140px) 5%;
-  background: linear-gradient(135deg, #16191e 0%, #1a1f2e 100%);
+  background:  #0f1419;
   color: #f9fafb;
   text-align: center;
 }
