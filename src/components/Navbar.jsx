@@ -1,69 +1,63 @@
-import { useState } from "react";
+import { useState } from "react"
+import Angellogo from '../assets/anjo-logo.png'
+import '../styles/Header.css' 
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <nav className="navbar">
-      <div className="nav-logo">KelvRunTime</div>
+  const [active, setActive] = useState(false);
 
-      <div
-        className={'nav-toggle ${isOpen ? "Open" : ""}'}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+  const toggleMenu = () => {
+    setActive(!active);
+  };
+
+  return (
+
+    <nav className="header">
+      <div className="nav-logo">
+        <img src={Angellogo} alt="logo kelvRuntime" className="logo-img" />
+        <span className="logo-text">
+          Kelv<span>RunTime</span>
+        </span>
       </div>
 
-      <ul className={'nav-links ${isOpen ? "open" : ""}'}>
+     
+      <div
+        className={active ? "menu-toggle is-active" : "menu-toggle"}
+        onClick={toggleMenu}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+
+      <ul className={active ? "nav-menu active" : "nav-menu"}>
         <li>
-          <a href="#Home" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="#Home" onClick={toggleMenu}>
+            Home
+          </a>
         </li>
         <li>
-          <a href="#About" onClick={() => setIsOpen(false)}>About</a>
+          <a href="#About" onClick={toggleMenu}>
+            About
+          </a>
         </li>
         <li>
-          <a href="#Services" onClick={() => setIsOpen(false)}>Services</a>
+          <a href="#Services" onClick={toggleMenu}>
+            Services
+          </a>
         </li>
         <li>
-          <a href="#Projects" onClick={() => setIsOpen(false)}>Projects</a>
+          <a href="#Projects" onClick={toggleMenu}>
+            Projects
+          </a>
         </li>
         <li>
-          <a href="Contact" onClick={() => setIsOpen(false)}>Contact</a>
+          <a href="#Contact" onClick={toggleMenu} className="nav-cta">
+            Hire Me
+          </a>
         </li>
       </ul>
     </nav>
   );
 };
 
-export default Navbar;
-
-//<ul className="nav-list">
-//  <li>
-//  <a href="#Home">Home</a>
-//</li>
-//
-//      <li>
-//        <a href="#About">About</a>
-//    </li>
-//
-//    <li>
-///    <a href="#Services">Services</a>
-//</li>
-
-//<li>
-//<a href="#Projects">Projects</a>
-// </li>
-
-//<li>
-// <a href="#Skills">Skills</a>
-//</li>
-
-// <li>
-// <a href="#Experience">Experience</a>
-//</li>
-
-//<li>
-/// <a href="#Contact">Contact me</a>
-//</li>
-//</ul>
+  export default Navbar;
