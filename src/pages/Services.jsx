@@ -1,44 +1,33 @@
+import { useTranslation } from "react-i18next";
 import "../styles/Services.css";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   const serviceTypes = [
     {
-      title: "Full-Stack Development",
-      icon: "⚡",
-      tags: [
-        "React.js",
-        "Node.js",
-        "JavaScript",
-        "TypeScript",
-        "Framework",
-        "Vite",
-        "PERN Stack",
-        "Web App",
-      ],
-      description:
-        "Building fast, SEO-friendly web applications with modern architecture and best practices.",
-    },
-
-    {
-      title: "Multilingual Tech Support",
-      icon: "🧑🏽‍💻",
-      tags: ["Customer Success", "Support", "Technical Help", "Bilingual"],
-      description:
-        "Expert technical support in English, Spanish, Portuguese, and Haitian Creole.",
+      titleKey: "service_0_title",
+      icon: "\u{26A1}",
+      tagsKey: "service_0_tags",
+      descKey: "service_0_desc",
     },
     {
-      title: "Cloud & DevOps",
-      icon: "☁️",
-      tags: ["AWS", "Infrastructure", "Deployment", "Automation"],
-      description:
-        "Secure and scalable cloud solutions using AWS and other cloud platforms.",
+      titleKey: "service_1_title",
+      icon: "\u{1F468}\u{1F3FD}\u{200D}\u{1F4BB}",
+      tagsKey: "service_1_tags",
+      descKey: "service_1_desc",
     },
     {
-      title: "Software Localization",
-      icon: "🌎",
-      tags: ["Translation", "Global Markets", "UI/UX Adaptation"],
-      description:
-        "Adapting software for international users and multiple languages.",
+      titleKey: "service_2_title",
+      icon: "\u2601\uFE0F",
+      tagsKey: "service_2_tags",
+      descKey: "service_2_desc",
+    },
+    {
+      titleKey: "service_3_title",
+      icon: "\u{1F30E}",
+      tagsKey: "service_3_tags",
+      descKey: "service_3_desc",
     },
   ];
 
@@ -46,7 +35,8 @@ const Services = () => {
     <section id="Services" className="services-section">
       <header className="services-header">
         <h2>
-          What I Can Do <span className="highlight">For You</span>
+          {t("services_header_1")}{" "}
+          <span className="highlight">{t("services_header_2")}</span>
         </h2>
       </header>
 
@@ -54,15 +44,19 @@ const Services = () => {
         {serviceTypes.map((s, index) => (
           <div key={index} className="services-glass-card">
             <div className="card-icon">{s.icon}</div>
-            <h3>{s.title}</h3>
-            <p>{s.description}</p>
+            <h3>{t(s.titleKey)}</h3>
+            <p>{t(s.descKey)}</p>
 
             <div className="service-tags">
-              {s.tags.map((tag) => (
-                <span key={tag} className="tag">
-                  #{tag}
-                </span>
-              ))}
+              {t(s.tagsKey)
+                .split("|")
+                .map((tag) => tag.trim())
+                .filter(Boolean)
+                .map((tag) => (
+                  <span key={tag} className="tag">
+                    #{tag}
+                  </span>
+                ))}
             </div>
           </div>
         ))}

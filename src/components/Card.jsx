@@ -1,7 +1,10 @@
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 import "../styles/Card.css";
 
 const Card = ({ title, description, image, link }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="project-card">
       <img src={image} alt={title} className="project-img" />
@@ -14,7 +17,7 @@ const Card = ({ title, description, image, link }) => {
           rel="noopener noreferrer"
           className="view-button"
         >
-          View Project
+          {t("view_project")}
         </a>
       </div>
     </div>

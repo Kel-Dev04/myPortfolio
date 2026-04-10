@@ -21,10 +21,6 @@
   gap: 1rem; /* Ajustado para proximidade ideal */
   font-size: 1.4rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .logo-img {
@@ -40,7 +36,7 @@
 }
 
 .logo-text span {
-  color: #007bff; /* Azul de destaque do KelvRuntime */
+  color: #3b82f6; /* Azul de destaque do KelvRuntime */
 }
 
 /* --- MENU DESKTOP --- */
@@ -75,6 +71,47 @@
 .nav-cta:hover {
   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
   transform: translateY(-2px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.nav-lang {
+  display: flex;
+  align-items: center;
+  
+}
+
+.lang-select {
+  appearance: auto;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  color-scheme: dark;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lang-select option {
+  background: #1a1f2e;
+  color: #fff;
+}
+
+.lang-select:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
 /* --- MOBILE TOGGLE (HAMBÚRGUER) --- */

@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import "../styles/Footer.css";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
@@ -10,7 +12,7 @@ const Footer = () => {
           <h3>
             Kelv<span>Runtime</span>
           </h3>
-          <p>Building scalable solutions and clean interfaces.</p>
+          <p>{t("footer_tagline")}</p>
         </div>
 
         <div className="footer-socials">
@@ -39,7 +41,9 @@ const Footer = () => {
       </div>
 
       <div>
-        <p>&copy; {currentYear} Kelvin C Edouard. All rights reserved.</p>
+        <p>
+          &copy; {currentYear} Kelvin C Edouard. {t("footer_rights")}
+        </p>
       </div>
     </footer>
   );

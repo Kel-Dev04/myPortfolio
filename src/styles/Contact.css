@@ -51,6 +51,51 @@
   align-items: left;
 }
 
+.phone-field-label {
+  display: block;
+  color: #e5e7eb;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.contact-phone {
+  width: 100%;
+  --PhoneInput-color--focus: #3b82f6;
+  --PhoneInputCountryFlag-borderColor: rgba(255, 255, 255, 0.25);
+  --PhoneInputCountrySelectArrow-color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-phone .PhoneInput {
+  width: 100%;
+}
+
+.contact-phone .PhoneInputInput {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  color: #f9fafb;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+  font-family: inherit;
+}
+
+.contact-phone .PhoneInputInput:focus {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+.contact-phone .PhoneInputCountryIcon--border {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
 .input-group label  {
   color: #e5e7eb;
   margin-bottom: 8px;
