@@ -11,38 +11,37 @@ const Home = () => {
             <span className="status-label"> Available for Hire</span>
           </div>
           <h1 className=" hero-title">
-            Engineering <span className="gradient-text">Global</span>
-            Solutions
+            Engineering <span className="gradient-text">Global</span> Solutions
           </h1>
-          <div className="hero-right">
+          <p className="hero-description">
+            I&apos;m <strong>Kelvin C Edouard (kelvruntim)</strong>, a software
+            engineer bridging the gap between code and communication across four
+            languages.
+          </p>
+          <div className="hero-actions">
+            <a href="#Contact" className="btn-main">
+              get Started 🚀
+            </a>
+            <a href="#About" className="btn-link">
+              The Story → 👉
+            </a>
+          </div>
+        </div>
+        <div className="hero-right">
           <div className="image-wrapper">
             <div className="image-border-glow"></div>
             <img
               src={profileImg}
               alt="Kelvin C Edouard"
               className=" hero-avatar"
+              fetchPriority="high"
+              loading="eager"
             />
 
             <div className="floating-badge">Open to work</div>
           </div>
         </div>
-          <p className="hero-description">
-            I'm <strong>Kelvin C Edouard</strong>, a software Engineer bridging the gap
-            between code and communication in 4 languages.
-          </p>
-          <div className="hero-actions">
-            <a href="#Contact" className="btn-main">
-              get Started
-            </a>
-            <a href="#About" className="btn-link">
-              The Story →
-            </a>
-          </div>
-        </div>
-
-        
       </div>
-      
     </section>
   );
 };

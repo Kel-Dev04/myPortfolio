@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 clamp(10px, 2vw, 20px);
   background: #0f1419;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -24,12 +25,17 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: clamp(60px, 10vw, 120px) 5%;
-  min-height: 80vh;
+  padding: clamp(40px, 8vw, 100px) clamp(20px, 4vw, 40px);
+  min-height: 70vh;
   border-bottom: 1px solid #1f2937;
-  scroll-margin-top: 100px;
-  margin-bottom: 40px;
-  background:  #0f1419;
+  scroll-margin-top: 80px;
+  margin-bottom: 20px;
+  background: #0f1419;
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  border-bottom-color: rgba(59, 130, 246, 0.35);
 }
 
 section > * {
@@ -58,6 +64,7 @@ h4 {
 h1 {
   font-size: clamp(2rem, 8vw, 3.5rem);
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -76,33 +83,96 @@ h4 {
   font-weight: 600;
 }
 
+p {
+  color: #c9d5e2;
+  line-height: 1.8;
+}
+
+a {
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+a:hover {
+  opacity: 0.92;
+}
+
 @media (max-width: 768px) {
   .app {
-    width: 95%;
-    padding: 0 10px;
+    width: 98%;
+    padding: 0 clamp(8px, 2vw, 15px);
   }
   section {
-    padding: clamp(40px, 8vw, 80px) 2%;
+    padding: clamp(30px, 6vw, 60px) clamp(10px, 3vw, 25px);
     min-height: auto;
-    gap: 20px;
+    gap: 15px;
   }
   main {
-    padding: 10px;
+    padding: clamp(8px, 2vw, 15px);
     padding-top: 70px;
-    gap: 20px;
+    gap: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .app {
     width: 100%;
-    padding: 0 8px;
+    padding: 0 clamp(5px, 1.5vw, 12px);
   }
   section {
-    padding: clamp(30px, 6vw, 50px) 3%;
+    padding: clamp(25px, 5vw, 50px) clamp(8px, 2vw, 20px);
+    min-height: 60vh;
   }
   main {
-    padding: 8px;
-    padding-top: 65px;
+    padding: clamp(5px, 1.5vw, 12px);
+    padding-top: 60px;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: #3b82f6;
+  font-size: 1.2rem;
+  font-weight: 600;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

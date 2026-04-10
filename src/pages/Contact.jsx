@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import "../styles/Contact.css";
 import emailjs from "@emailjs/browser";
-import.meta.env.SERVICE_key;
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,28 +16,35 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-    setStatus(" ");
+    setStatus("");
 
-    emailjs
-      .sendForm(
-        import.meta.env.SERVICE_ID,
-        import.meta.env.TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.PUBLIC_KEY,
-      )
-      .then(
-        () => {
-          setStatus("✅ Message sending with sucess! ");
-          formRef.current.reset();
-          setLoading(false);
-        },
-        (error) => {
-          console.error("Erro:", error.text);
-          setStatus("❌ Erro to Send. Try again. ");
-          setLoading(false);
-        },
-      );
+    const servuceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    console.log("Config carregada:", { servuceId, templateId, publicKey });
+
+    if (!servuceId || !templateId || !publicKey) {
+      console.error("EmailJS configuration is missing.");
+      setStatus("❌ Email service is not configured.");
+      setLoading(false);
+      return;
+    }
+
+    emailjs.sendForm(servuceId, templateId, formRef.current, publicKey).then(
+      () => {
+        setStatus("✅ Message sent with success!");
+        formRef.current.reset();
+        setLoading(false);
+      },
+      (error) => {
+        console.error("Erro:", error);
+        setStatus("❌ Error to Send. Try again.");
+        setLoading(false);
+      },
+    );
   };
+  console.log(emailjs);
 
   return (
     <section id="Contact" className="contact-section">
