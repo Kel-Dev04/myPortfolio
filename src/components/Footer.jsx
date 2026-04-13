@@ -17,7 +17,7 @@ const Footer = () => {
 
         <div className="footer-socials">
           <a
-            href="https://github.com/kelvRuntime"
+            href="https://github.com/kelvruntime"
             target="_blank"
             rel="noreferrer"
           >

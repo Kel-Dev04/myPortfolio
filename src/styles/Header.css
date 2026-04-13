@@ -1,11 +1,15 @@
-  /* --- ESTILO DO HEADER (NAVBAR) --- */
+/* --- ESTILO DO HEADER (NAVBAR) --- */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 60px;
-  background: linear-gradient(90deg, #16191e 0%, #1a1f2e 100%); /* Seu gradiente original */
+  background: linear-gradient(
+    90deg,
+    #16191e 0%,
+    #1a1f2e 100%
+  ); /* Seu gradiente original */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +30,7 @@
 .logo-img {
   width: 150px;
   height: auto;
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -36,7 +40,7 @@
 }
 
 .logo-text span {
-  color: #3b82f6; /* Azul de destaque do KelvRuntime */
+  color: #3b82f6; /* Azul de destaque do kelvruntime */
 }
 
 /* --- MENU DESKTOP --- */
@@ -44,7 +48,7 @@
   display: flex;
   list-style: none;
   gap: 2rem;
-    align-items: center;
+  align-items: center;
 }
 
 .nav-menu a {
@@ -65,7 +69,7 @@
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: 700;
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav-cta:hover {
@@ -88,7 +92,6 @@
 .nav-lang {
   display: flex;
   align-items: center;
-  
 }
 
 .lang-select {
@@ -150,7 +153,7 @@
     gap: 25px;
     transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     border-bottom: 2px solid #007bff;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 
   /* ESTA CLASSE É ATIVADA PELO CLICK NO JSX */
@@ -168,4 +171,4 @@
   .menu-toggle.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  }
+}

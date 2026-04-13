@@ -19,8 +19,7 @@ const Home = () => {
             {t("hero_suffix")}
           </h1>
           <p className="hero-description">
-            {t("hero_i_am")}{" "}
-            <strong>Kelvin C Edouard (kelvruntim)</strong>,{" "}
+            {t("hero_i_am")} <strong>Kelvin C Edouard (kelvruntime)</strong>,{" "}
             {t("hero_description_rest")}
           </p>
           <div className="hero-actions">
