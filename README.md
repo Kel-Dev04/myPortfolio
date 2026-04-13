@@ -1,26 +1,31 @@
-# Olá, eu sou o kelvruntime 👋
+# Hi, I'm Kelvin C. (kelvRuntime) 👋
 
-### Software Engineer | Cloud & DevOps Specialist | Full-Stack Developer
+### Software Engineer | Junior Cloud & DevOps Specialist | Full-Stack Developer
 
-Estou focado em construir aplicações escaláveis e modernas, unindo o desenvolvimento web com uma infraestrutura robusta e automatizada.
+I am focused on building scalable and modern applications, merging web development with robust, secure, and automated infrastructure.
 
 ---
 
-### 🚀 Sobre Mim
+### 🚀 About Me
 
-- 🎓 Estudante de Ciência da Computação.
-- 💻 Atualmente trabalhando em projetos Full-Stack com **React, Vite e Node.js**.
-- ☁️ Interessado em arquitetura Cloud, Docker e CI/CD.
-- 🌐 Poliglota: Fluente em Espanhol, Português, Inglês e Crioulo Haitiano.
+* 🎓 **Education**: Computer Science student with specialized technical training completed in the United States.
+* 💻 **Current Focus**: Developing Full-Stack ecosystems using **React, Vite, and Node.js**.
+* ☁️ **Specialization**: Cloud Architecture, Docker, CI/CD, and Application Security (HSTS, CSP, Security Headers).
+* 🌐 **Polyglot**: Proficient in English, Portuguese, Spanish, and Haitian Creole.
 
-### 🛠️ Tecnologias e Ferramentas
+### 🛠️ Technologies & Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,vite,nodejs,express,html,css" alt="Frontend/Backend" />
-  <img src="https://skillicons.dev/icons?i=aws,docker,linux,githubactions,git,termux,adb" alt="DevOps/Tools" />
+  <img src="https://skillicons.dev/icons?i=js,ts,react,vite,tailwind,nodejs,express,html,css" alt="Frontend/Backend" />
+  <img src="https://skillicons.dev/icons?i=aws,vercel,docker,linux,githubactions,git,termux,adb" alt="DevOps/Tools" />
 </p>
 
-### 📈 Estatísticas do GitHub
+### 🛡️ Recent Engineering Implementations
+* **Cloud Security**: Configured rigorous security policies (`vercel.json`) including Content Security Policy (CSP) and Clickjacking protection.
+* **Performance & Bundling**: Optimized Vite builds with *Manual Chunks* strategies to reduce main bundle size and improve loading latency.
+* **Internationalization**: Integrated full i18next support for native multi-language (EN, PT, ES) capabilities.
+
+### 📈 GitHub Stats
 
 <p align="left">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=kelvruntime&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
@@ -29,14 +34,14 @@ Estou focado em construir aplicações escaláveis e modernas, unindo o desenvol
 
 ---
 
-### 📂 Meus Principais Projetos
+### 📂 Featured Projects
 
-- **[Seu Portfólio](https://kelvruntime.vercel.app)** - Site profissional construído com React e Vite.
-- **pm3-download** - Aplicação de download de música focada em performance e UX.
+* **[KelvRuntime Portfolio](https://kelvruntime.vercel.app)** – Optimized and secure professional portfolio hosted on Vercel.
+* **[KelvRuntime-Engine](https://github.com/kelvRuntime/KelvRuntime-Engine)** – Robust backend for media processing and download automation.
 
 ---
 
-### 📫 Como me encontrar
+### 📫 Connect with me
 
-[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />](SEU_LINK_DO_LINKEDIN_AQUI)
-[<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />](mailto:seu-email@gmail.com)
+[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/kelvin-c-edouard/)
+[<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/kelvRuntime)
