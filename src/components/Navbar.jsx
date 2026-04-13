@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Angellogo from "../assets/anjo-logo.png";
+import Angellogo from "../assets/anjo-logo.webp";
 import "../styles/Header.css";
 
 const Navbar = () => {
@@ -13,7 +13,6 @@ const Navbar = () => {
   };
 
   return (
-
     <nav className="header">
       <div className="nav-logo">
         <img src={Angellogo} alt={t("nav_logo_alt")} className="logo-img" />
@@ -22,7 +21,6 @@ const Navbar = () => {
         </span>
       </div>
 
-     
       <div
         className={active ? "menu-toggle is-active" : "menu-toggle"}
         onClick={toggleMenu}

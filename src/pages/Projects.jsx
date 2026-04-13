@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Card from "../components/Card";
-import anjoLogo from "../assets/anjo-logo.png";
+import anjoLogo from "../assets/anjo-logo.webp";
 
 const Projects = () => {
   const { t } = useTranslation();
